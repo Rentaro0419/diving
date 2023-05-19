@@ -1,7 +1,5 @@
 @use "sass:math";
 
-
-
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
 $l-inner: 1080px;
@@ -13,7 +11,7 @@ $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
 //英字表記のスタイル崩れ防止
-body{
+body {
   word-wrap: break-all;
 }
 
@@ -21,9 +19,9 @@ body{
 // フォント設定
 ////////////////////
 
-$base-font-family: 'Noto Sans JP', sans-serif;
-$second-font-family: 'Gotu', sans-serif;
-$third-font-family: 'Noto Serif', serif;;
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Gotu", sans-serif;
+$third-font-family: "Lato", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -31,8 +29,7 @@ body {
 }
 
 // フォントウェイト
-$regular: 300;
-$normal: 400;
+$regular: 400;
 $medium: 500;
 $bold: 700;
 
@@ -43,13 +40,28 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #000;
 $white: #fff;
-$gray: #F2F2F2;
-$light-blue: #DDF0F1;
-$sea-blue: #408F95;
-$navy: #0D2936;
+$gray: #f2f2f2;
+$light-blue: #ddf0f1;
+$sea-blue: #408f95;
+$navy: #0d2936;
 $header-color1: rgb(13 41 54 / 68%);
-$header-color2: #9A9A9A;
+$header-color2: #9a9a9a;
 
+//PCのみ表示
+.u-desktop {
+  display: block;
+  @include mq("md") {
+    display: none;
+  }
+}
+
+//モバイルのみ表示
+.u-mobile {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
 // @if $startFrom == sp {
 //   //768px以上を表示
 //   .u-desktop {
@@ -71,14 +83,6 @@ $header-color2: #9A9A9A;
 //     display: block;
 //     @include mq("md") {
 //       display: none;
-//     }
-//   }
-
-//   //モバイルのみ表示
-//   .u-mobile {
-//     display: none;
-//     @include mq("md") {
-//       display: block;
 //     }
 //   }
 // }
