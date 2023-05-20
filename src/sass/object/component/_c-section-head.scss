@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.c-section-head{
+  text-align: center;
+}
+
+.c-section-title{
+  font-size: rem(32);
+  font-family: $second-font-family;
+  text-transform: capitalize;
+  font-weight: $regular;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+.c-section-title:first-letter{
+  color: $sea-blue;
+}
+
+
+.c-section-lead{
+  font-family: $base-font-family;
+  color: $sea-blue;
+  font-size: rem(12);
+}
