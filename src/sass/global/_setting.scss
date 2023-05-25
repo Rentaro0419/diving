@@ -56,13 +56,20 @@ $header-color2: #9a9a9a;
   }
 }
 
-//モバイルのみ表示
+// // //モバイルのみ表示
 .u-mobile {
   display: none;
   @include mq("md") {
     display: block;
   }
 }
+
+// .u-mobile {
+//   display: none;
+//   @include mq("md") {
+//     display: block;
+//   }
+// }
 // @if $startFrom == sp {
 //   //768px以上を表示
 //   .u-desktop {
@@ -87,3 +94,5 @@ $header-color2: #9a9a9a;
 //     }
 //   }
 // }
+
+
