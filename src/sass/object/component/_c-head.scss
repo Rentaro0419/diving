@@ -31,19 +31,3 @@
     }
   }
   
-  .c-head::after {
-    content: "";
-    position: absolute;
-    top: 27%;
-    right: rem(21);
-    width: rem(10);
-    border-top: 1px solid $sea-blue;
-    /* border-right: 2px solid white; */
-    -webkit-transform: rotate(135deg) translateY(-50%);
-    transform: rotate(135deg) translateY(-50%);
-    @include mq("md") {
-        width: rem(10);
-        top: 29%;
-        right: rem(37);
-    }
-  }
