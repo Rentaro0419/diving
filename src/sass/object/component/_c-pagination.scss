@@ -1,0 +1,76 @@
+@use "global" as *;
+
+._c-pagination--item{
+    // display: inline-block;
+    // max-width: rem(38);
+    // width: 100%;
+    // color: $sea-blue;
+    // background-color: $white;
+    // font-size: rem(16);
+    // font-weight: 700;
+    // font-family: $third-font-family;
+    // padding: rem(6);
+    // border: rem(1) solid $sea-blue;
+    // text-align: center;
+
+    display: inline-block;
+    max-width: rem(38);
+    width: 100%;
+    font-size: rem(16);
+    font-weight: 700;
+    font-family: $third-font-family;
+    border: rem(1) solid $sea-blue;
+    text-align: center;
+}
+
+._c-pagination--item a{
+    display: block;
+    color: $sea-blue;
+    background-color: $white;
+    padding: rem(6);
+}
+
+._c-pagination--item--first,
+._c-pagination--item--last{
+    position: relative;
+    display: inline-block;
+    max-width: rem(38);
+    width: 100%;
+    border: rem(1) solid $sea-blue;
+    text-align: center;
+}
+
+._c-pagination--item--first a,
+._c-pagination--item--last a{
+    display: block;
+    color: $sea-blue;
+    background-color: $white;
+    padding: rem(18);
+}
+
+._c-pagination--item--first::before{
+    content: "";
+    position: absolute;
+    top: 19%;
+    right: rem(4);
+    width: rem(15);
+    height: rem(15);
+    border-top: rem(1) solid $sea-blue;
+    border-right: rem(1) solid $sea-blue;
+    -webkit-transform: rotate(225deg) translateY(-50%);
+    transform: rotate(225deg) translateY(-50%);
+}
+
+._c-pagination--item--last::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(19);
+    width: rem(15);
+    height: rem(15);
+    border-top: rem(1) solid $sea-blue;
+    border-right: rem(1) solid $sea-blue;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+}
+
