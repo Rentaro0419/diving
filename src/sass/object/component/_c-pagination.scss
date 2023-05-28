@@ -10,7 +10,6 @@
     font-size: rem(16);
     font-weight: 700;
     font-family: $third-font-family;
-    // border: 1px solid $sea-blue;
     text-align: center;
     margin-left: rem(12);
 }
@@ -39,7 +38,6 @@
 ._c-pagination--item--first,
 ._c-pagination--item--last{
     position: relative;
-    // display: inline-block;
     max-width: rem(38);
     width: 100%;
     border: 1px solid $sea-blue;
@@ -74,7 +72,7 @@
 ._c-pagination--item--last::before{
     content: "";
     position: absolute;
-    top: 50%;
+    top: 44%;
     right: rem(19);
     width: rem(15);
     height: rem(15);
