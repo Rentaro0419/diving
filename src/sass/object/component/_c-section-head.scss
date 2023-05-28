@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.c-section-title{
+.c-section-head-title{
   font-size: rem(32);
   font-family: $second-font-family;
   text-transform: capitalize;
@@ -14,12 +14,12 @@
   }
 }
 
-.c-section-title:first-letter{
+.c-section-head-title:first-letter{
   color: $sea-blue;
 }
 
 
-.c-section-lead{
+.c-section-head-lead{
   font-family: $base-font-family;
   color: $sea-blue;
   font-size: rem(12);
