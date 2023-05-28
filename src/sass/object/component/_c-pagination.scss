@@ -1,26 +1,18 @@
 @use "global" as *;
 
-._c-pagination--item{
-    // display: inline-block;
-    // max-width: rem(38);
-    // width: 100%;
-    // color: $sea-blue;
-    // background-color: $white;
-    // font-size: rem(16);
-    // font-weight: 700;
-    // font-family: $third-font-family;
-    // padding: rem(6);
-    // border: rem(1) solid $sea-blue;
-    // text-align: center;
+._c-pagination{
+    display: flex;
+}
 
-    display: inline-block;
+._c-pagination--item{
     max-width: rem(38);
     width: 100%;
     font-size: rem(16);
     font-weight: 700;
     font-family: $third-font-family;
-    border: rem(1) solid $sea-blue;
+    // border: 1px solid $sea-blue;
     text-align: center;
+    margin-left: rem(12);
 }
 
 ._c-pagination--item a{
@@ -28,15 +20,29 @@
     color: $sea-blue;
     background-color: $white;
     padding: rem(6);
+    border: 1px solid $sea-blue;
+}
+
+._c-pagination--item:nth-of-type(2){
+    margin-left: rem(40);
+}
+
+._c-pagination--item:nth-of-type(6){
+    margin-left: rem(40);
+}
+
+._c-pagination--item.this a{
+    background-color: $sea-blue;
+    color: $white;
 }
 
 ._c-pagination--item--first,
 ._c-pagination--item--last{
     position: relative;
-    display: inline-block;
+    // display: inline-block;
     max-width: rem(38);
     width: 100%;
-    border: rem(1) solid $sea-blue;
+    border: 1px solid $sea-blue;
     text-align: center;
 }
 
@@ -48,15 +54,19 @@
     padding: rem(18);
 }
 
+._c-pagination--item--last{
+    margin-left: rem(40);
+}
+
 ._c-pagination--item--first::before{
     content: "";
     position: absolute;
     top: 19%;
-    right: rem(4);
+    right: rem(1);
     width: rem(15);
     height: rem(15);
-    border-top: rem(1) solid $sea-blue;
-    border-right: rem(1) solid $sea-blue;
+    border-top: 1px solid $sea-blue;
+    border-right: 1px solid $sea-blue;
     -webkit-transform: rotate(225deg) translateY(-50%);
     transform: rotate(225deg) translateY(-50%);
 }
@@ -68,8 +78,8 @@
     right: rem(19);
     width: rem(15);
     height: rem(15);
-    border-top: rem(1) solid $sea-blue;
-    border-right: rem(1) solid $sea-blue;
+    border-top: 1px solid $sea-blue;
+    border-right: 1px solid $sea-blue;
     -webkit-transform: rotate(45deg) translateY(-50%);
     transform: rotate(45deg) translateY(-50%);
 }
