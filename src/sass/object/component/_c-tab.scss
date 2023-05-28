@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.c-tab__nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: rem(19);
+  @include mq(md) {
+    gap: rem(90);
+  }
+}
+
+.c-tab__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(8);
+  width: calc(33.333% - 90px * 2 / 3);
+  color: $white;
+  background: $light-blue;
+  color: $sea-blue;
+  font-size: rem(14);
+  padding: rem(10);
+  text-align: center;
+  box-shadow: rem(2) rem(4) rem(2) rem(0) rgba(0, 0, 0, 0.4);
+  @include mq(md) {
+    font-size: rem(24);
+    padding: rem(13);
+    box-shadow: none;
+  }
+}
+
+.c-tab__item .is-check {
+  background: $sea-blue;
+  color: $white;
+}
+
+.c-tab__item img {
+  display: none;
+  filter: invert(52%) sepia(21%) saturate(949%) hue-rotate(136deg)
+    brightness(92%) contrast(89%);
+  @include mq(md) {
+    display: block;
+    aspect-ratio: 1 / 1;
+    width: rem(64);
+  }
+}
+
+.c-tab__item .is-checked img {
+  filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(202deg)
+    brightness(106%) contrast(106%);
+}
