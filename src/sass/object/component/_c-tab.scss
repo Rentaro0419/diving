@@ -30,9 +30,13 @@
   }
 }
 
-.c-tab__item .is-check {
+.c-tab__item.is-checked {
   background: $sea-blue;
   color: $white;
+}
+
+.c-tab__item.is-checked img{
+  filter: brightness(0) invert(1);
 }
 
 .c-tab__item img {
