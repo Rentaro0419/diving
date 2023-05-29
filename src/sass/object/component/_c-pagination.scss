@@ -74,7 +74,7 @@
 ._c-pagination--item--last::before{
     content: "";
     position: absolute;
-    top: 50%;
+    top: 44%;
     right: rem(19);
     width: rem(15);
     height: rem(15);
@@ -83,4 +83,3 @@
     -webkit-transform: rotate(45deg) translateY(-50%);
     transform: rotate(45deg) translateY(-50%);
 }
-
