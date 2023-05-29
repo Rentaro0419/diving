@@ -48,51 +48,51 @@ $navy: #0d2936;
 $header-color1: rgb(13 41 54 / 68%);
 $header-color2: #9a9a9a;
 
-//PCのみ表示
-.u-desktop {
-  display: block;
-  @include mq("md") {
-    display: none;
-  }
-}
+// //PCのみ表示
+// .u-desktop {
+//   display: block;
+//   @include mq("md") {
+//     display: none;
+//   }
+// }
 
-// // //モバイルのみ表示
-.u-mobile {
-  display: none;
-  @include mq("md") {
-    display: block;
-  }
-}
-
+// // // //モバイルのみ表示
 // .u-mobile {
 //   display: none;
 //   @include mq("md") {
 //     display: block;
 //   }
 // }
-// @if $startFrom == sp {
-//   //768px以上を表示
-//   .u-desktop {
-//     display: none;
-//     @include mq("md") {
-//       display: block;
-//     }
-//   }
 
-//   //モバイルのみ表示
-//   .u-mobile {
-//     @include mq("md") {
-//       display: none;
-//     }
-//   }
-// } @else {
-//   //768px以上を表示
-//   .u-desktop {
-//     display: block;
-//     @include mq("md") {
-//       display: none;
-//     }
-//   }
-// }
+.u-mobile {
+  display: none;
+  @include mq("md") {
+    display: block;
+  }
+}
+@if $startFrom == sp {
+  //768px以上を表示
+  .u-desktop {
+    display: none;
+    @include mq("md") {
+      display: block;
+    }
+  }
+
+  //モバイルのみ表示
+  .u-mobile {
+    @include mq("md") {
+      display: none;
+    }
+  }
+} @else {
+  //768px以上を表示
+  .u-desktop {
+    display: block;
+    @include mq("md") {
+      display: none;
+    }
+  }
+}
 
 
