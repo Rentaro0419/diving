@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.c-campaign__tab--item{
+    display: inline-block;
+    max-width: rem(162);
+    width: 100%;
+    background-color: $white;
+    color: $sea-blue;
+    font-size: rem(14);
+    font-weight: 400;
+    border: 1px solid $sea-blue;
+    text-align: center;
+    padding: rem(5.5);
+}
+
+.c-campaign__tab--content {
+    display: none;
+}
+
+#all:checked ~ #all-content,
+#license:checked ~ #license-content,
+#fun:checked ~ #fun-content,
+#experience:checked ~ #experience-content {
+  display: block;
+}
+
+.c-campaign__tab input:checked + .c-campaign__tab--item {
+    background-color: $sea-blue;
+    color: $white;
+}
+
+.c-campaign__tab--item:nth-of-type(n+1){
+    margin-left: rem(21);
+    @include mq("md") {
+        margin-left: rem(32);
+    }
+}
+
+.c-campaign__tab--item:nth-of-type(2n){
+    margin-top: rem(16);
+}

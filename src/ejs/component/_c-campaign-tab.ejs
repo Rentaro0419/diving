@@ -1,0 +1,29 @@
+<% var tab=[ 
+  // { name: 'all' , text: 'ALL' },  
+  { name: 'license' , text: 'ライセンス講習' , nameid: 'license-content' }, 
+  { name: 'fun' , text: 'ファンダイビング', nameid: 'fun-content' },  
+  { name: 'experience' , text: '体験ダイビング', nameid: 'experience-content' } ];
+%>
+
+<div class="c-campaign__tab">
+    <input type="radio" id="all" name="tab_item" checked>
+    <label for="all" class="c-campaign__tab--item">ALL</label>
+
+    <% for(var i=0; i < tab.length; i++) { %>
+        <input type="radio" id="<%= tab[i].name %>" name="tab_item">
+        <label for="<%= tab[i].name %>" class="c-campaign__tab--item"><%= tab[i].text %></label>
+    <% } %>
+
+    <div class="c-campaign__tab--content" id="all-content">
+      <div class="c-campaign__tab--content-description">
+        <p class="c-campaign__tab--content-text">デザインカンプの内容がここに入ります</p>
+      </div>
+    </div>
+    <% for(var i=0; i < tab.length; i++) { %>
+    <div class="c-campaign__tab--content" id="<%= tab[i].nameid %>">
+      <div class="c-campaign__tab--content-description"></div>
+    </div>
+    <% } %>
+</div>
+
+
