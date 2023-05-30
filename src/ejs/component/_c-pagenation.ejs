@@ -1,0 +1,40 @@
+<% var page=[ 
+  { link: '#' , count: 2 }, 
+  { link: '#' , count: 3 },  
+  { link: '#' , count: 4 } ];
+%>
+<% var pagepc=[ 
+  { link: '#' , count: 2 }, 
+  { link: '#' , count: 3 }, 
+  { link: '#' , count: 4 }, 
+  { link: '#' , count: 5 }, 
+  { link: '#' , count: 6 } ];
+%>
+<ul class="c-pagination">
+    <li class="c-pagination--item--first">
+        <a href="#"></a>
+    </li>
+    <li class="c-pagination--item u-desktop this">
+        <a href="#">1</a>
+    </li>
+    <% for(var i=0; i < page.length; i++) { %>
+        <li class="c-pagination--item u-desktop">
+            <a href="< %= page[i].link % >">
+        <%= page[i].count %></a>
+        </li>
+    <% } %>
+    <li class="c-pagination--item u-mobile this">
+        <a href="#">1</a>
+    </li>
+    <% for(var i=0; i < pagepc.length; i++) { %>
+        <li class="_c-pagination--item u-mobile">
+            <a href="< %= page[i].link % >">
+        <%= pagepc[i].count %></a>
+        </li>
+    <% } %>
+    
+
+    <li class="c-pagination--item--last">
+        <a href="#"></a>
+    </li>
+</ul>
