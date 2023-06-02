@@ -9,6 +9,16 @@
   padding: rem(15) rem(16) rem(24);
 }
 
+.c-card02__head {
+  display: flex;
+  justify-content: space-between;
+  gap: rem(13);
+  @include mq(md) {
+    gap: rem(16);
+  }
+}
+
+
 .c-card02__head-box {
   border-bottom: $sea-blue solid rem(2);
   @include mq(md) {
@@ -37,13 +47,6 @@
   padding: rem(4) rem(16);
 }
 
-.c-card02__head {
-  display: flex;
-  gap: rem(13);
-  @include mq(md) {
-    gap: rem(16);
-  }
-}
 
 .c-card02__head-title {
   padding-top: rem(4);
@@ -57,10 +60,12 @@
 }
 
 .c-card02-img img {
-  width: 100%;
+  width: rem(151);
+  max-width: 100%;
   aspect-ratio: 151 / 117;
   @include mq(md) {
-    max-width: rem(180);
+    width: rem(180);
+    max-width: 100%;
     aspect-ratio: 180/140;
   }
 }
