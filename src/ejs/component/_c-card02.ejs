@@ -1,0 +1,29 @@
+
+<% let meta1={ age: '20代(女性)' ,tag: 'ライセンス講習' } %>
+<% let meta2={ age: '30代(男性)' ,tag: 'ファンダイビング' } %>
+<% let meta3={ age: '30代(女性)' ,tag: '体験ダイビング' } %>
+
+<% let image1='../assets/images/common/voice1.jpg' %>
+
+<% let title='ここにタイトルが入ります。ここにタイトル' %>
+<% let content='ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。' %>
+
+<div class="c-card02">
+  <div class="c-card02__head">
+    <div class="c-card02__head-box">
+      <div class="c-card02__head-meta">
+        <p class="c-card02__head-age"><%= meta1.age %></p>
+        <div class="c-card02__head-tag"><%= meta2.tag %></div>
+      </div>
+      <h2 class="c-card02__head-title">
+        <%= title %>
+      </h2>
+    </div>
+    <div class="c-card02__head-img">
+      <img src="<%- image2 %>" alt="お客様の声">
+    </div>
+  </div>
+  <div class="c-card02__body">
+    <p><%= content %></p>
+  </div>
+</div>
