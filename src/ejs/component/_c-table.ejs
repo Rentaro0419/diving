@@ -1,0 +1,28 @@
+<% let tableth1='ライセンス講習' %>
+
+<% let tablecontent1='オープンウォーター<br class="u-mobile">ダイバーコース' %>
+<% let tablecontent2='アドバンスド<br class="u-mobile">オープンウォーターコース' %>
+<% let tablecontent3='レスキュー＋EFRコース' %>
+
+<% let price1='¥50,000' %>
+<% let price2='¥60,000' %>
+<% let price3='¥70,000' %>
+
+<table class="c-table">
+   
+  <tr>
+    <th class="c-table--head" rowspan="3"><%- tableth1 %>
+      <img src="../assets/images/common/wheel-icon--white.png" alt="">
+    </th>
+    <td class="c-table--td01"><%- tablecontent1 %></td>
+    <td class="c-table--td02"><%= price1 %></td>
+  </tr>
+  <tr>
+    <td class="c-table--td01"><%- tablecontent2 %></td>
+    <td class="c-table--td02"><%= price2 %></td>
+  </tr>
+  <tr>
+    <td class="c-table--td01"><%- tablecontent3 %></td>
+    <td class="c-table--td02"><%= price3 %></td>
+  </tr>
+</table>

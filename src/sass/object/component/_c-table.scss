@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-table {
+  border: rem(1) solid $sea-blue;
+  border-collapse: collapse;
+}
+
+.c-table td {
+  border: rem(1) solid $sea-blue;
+  padding: rem(18) rem(15);
+}
+
+.c-table--head {
+  background: $sea-blue;
+  color: $white;
+  @include mq(md) {
+    padding: rem(41) rem(44);
+  }
+}
+
+.c-table--head img {
+  margin: auto;
+  width: rem(64);
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.c-table--td01 {
+  min-width: rem(340);
+}
+
+.c-table--td02 {
+  min-width: rem(162);
+  text-align: right;
+}
+
+.c-table--td01 br {
+  @include mq(md) {
+    display: none;
+  }
+}
