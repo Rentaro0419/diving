@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.c-sidebar-head{
+  border-left: rem(8) solid $sea-blue;
+  display: flex;
+  align-items: center;
+  gap: rem(8);
+  padding-left: rem(16);
+}
+
+.c-sidebar-head img{
+  max-width: 100%;
+  width: rem(50);
+  height: rem(50);
+  aspect-ratio: 1 / 1;
+}
+
+.c-sidebar-title{
+  font-size: rem(24);
+  font-weight: $regular;
+}
