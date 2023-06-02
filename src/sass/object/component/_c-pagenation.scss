@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.c-pagination{
+    display: flex;
+}
+
+.c-pagination--item{
+    max-width: rem(38);
+    width: 100%;
+    font-size: rem(16);
+    font-weight: 700;
+    font-family: $third-font-family;
+    // border: 1px solid $sea-blue;
+    text-align: center;
+    margin-left: rem(12);
+}
+
+.c-pagination--item a{
+    display: block;
+    color: $sea-blue;
+    background-color: $white;
+    padding: rem(6);
+    border: 1px solid $sea-blue;
+}
+
+.c-pagination--item:nth-of-type(2){
+    margin-left: rem(40);
+}
+
+.c-pagination--item:nth-of-type(6){
+    margin-left: rem(40);
+}
+
+.c-pagination--item.this a{
+    background-color: $sea-blue;
+    color: $white;
+}
+
+.c-pagination--item--first,
+.c-pagination--item--last{
+    position: relative;
+    // display: block;
+    max-width: rem(38);
+    width: 100%;
+    border: 1px solid $sea-blue;
+    text-align: center;
+}
+
+.c-pagination--item--first a,
+.c-pagination--item--last a{
+    display: block;
+    color: $sea-blue;
+    background-color: $white;
+    padding: rem(18);
+    position: relative;
+}
+
+
+.c-pagination--item--last{
+    margin-left: rem(40);
+}
+
+.c-pagination--item--first a::before{
+    content: "";
+    position: absolute;
+    top: 19%;
+    right: rem(1);
+    width: rem(15);
+    height: rem(15);
+    border-top: 1px solid $sea-blue;
+    border-right: 1px solid $sea-blue;
+    -webkit-transform: rotate(225deg) translateY(-50%);
+    transform: rotate(225deg) translateY(-50%);
+}
+
+.c-pagination--item--last a::before{
+    content: "";
+    position: absolute;
+    top: 44%;
+    right: rem(19);
+    width: rem(15);
+    height: rem(15);
+    border-top: 1px solid $sea-blue;
+    border-right: 1px solid $sea-blue;
+    -webkit-transform: rotate(45deg) translateY(-50%);
+    transform: rotate(45deg) translateY(-50%);
+}
